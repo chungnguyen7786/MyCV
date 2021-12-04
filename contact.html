@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h3>My Contact:</h3>
+    <p>My Address</p>
+    <p>My Phone Number</p>
+    <p>chungnguyen0786@gmail.com</p>
+    <hr />
+    <p>Feel free to contact me:</p>
+    <form
+      action="mailto:chungnguyen0786@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="yourName">Your name:</label>
+      <input type="text" id="yourName" name="yourName" />
+      <!-- for attribute in label element will link to id in input element
+      name attribute must have for submit, the result will look like: "name: value" -->
+      <br />
+      <label for="yourEmail">Your email:</label>
+      <input type="email" id="yourEmail" name="yourEmail" />
+      <br />
+      <label for="yourMessage">Your message:</label>
+      <br />
+      <textarea
+        name="yourMessage"
+        id="yourMessage"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
